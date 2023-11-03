@@ -1,0 +1,79 @@
+.mainContainer
+{
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-auto-rows: 150px;
+    grid-template: repeat(1,150px) /repeat(auto-fit,minmax(150px,.5fr));
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
+.head button
+{
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+.red
+{
+    background-color: rgba(255,19,0,.1);
+    border: 2px solid #ff1300;
+    color: #ff1300;
+}
+.blue
+{
+    background-color: rgba(0,119,255,.1);
+    border: 2px solid #07f;
+    color: #07f;
+}
+
+.album
+{
+    background-color: #eeeeee;
+    height: 150px;
+    padding: 5px;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+    transition: 0.2s ease-in;
+}
+.album:hover
+{
+    background-color: #07f;
+    color: white;
+}
+.album div{
+    position: relative;
+    background-color: white;
+    height: 80%;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
+.album div img
+{
+    position: absolute;
+    top:38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.album div span{
+    position: absolute;
+    bottom: -22%;
+    font-weight: 600;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translate(-50%,0%);
+}   

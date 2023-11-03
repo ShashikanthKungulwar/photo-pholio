@@ -1,0 +1,15 @@
+.header
+{
+    display: flex;
+    align-items: center;
+    background-color: #a0a0f9;
+    height: 70px;
+    width: 100vw;
+}
+.header img{
+    margin: 0 10px 0 40px;
+    cursor: pointer;
+}
+.header h2{
+    cursor: pointer;
+}
